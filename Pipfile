@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+
+[packages]
+numpy = "*"
+pandas = "*"
+opencv-python = "*"
+numba = "*"
+scipy = "*"
+llvmlite = "*"
+
+[requires]
+python_version = "3"
+
+[scripts]
+start = "python main.py input.txt output.txt --arg3 11111 -a 22222"
+test = "python -m unittest discover -v"
+format = "black"
+lint = "flake8 --show-source ."
+
+[pipenv]
+allow_prereleases = true
