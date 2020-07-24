@@ -1,0 +1,10 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Args": ["--ignore=E501"],
+  "python.formatting.blackArgs": ["--line-length=90"],
+  "python.pythonPath": "/Users/shino/.local/share/virtualenvs/spike-python-pyarmor-and-argparse-_luzseVg/bin/python"
+}
