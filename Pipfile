@@ -14,6 +14,8 @@ opencv-python = "*"
 numba = "*"
 scipy = "*"
 llvmlite = "*"
+pyarmor = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3"
@@ -23,6 +25,7 @@ start = "python main.py input.txt output.txt --arg3 11111 -a 22222"
 test = "python -m unittest discover -v"
 format = "black"
 lint = "flake8 --show-source ."
+build = "pyarmor pack -e ' --onefile --noconsole' main.py"
 
 [pipenv]
 allow_prereleases = true
